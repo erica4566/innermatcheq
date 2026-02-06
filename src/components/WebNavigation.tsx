@@ -382,3 +382,4 @@ export default function WebNavigation({ children, showFooter = true }: WebNaviga
 }
 
 export { WebHeader, WebFooter };
+
