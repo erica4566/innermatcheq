@@ -116,11 +116,6 @@ const TESTIMONIALS = [
 export default function WebLandingPage() {
   const router = useRouter();
 
-  // NOTE: For the website landing page, we intentionally do NOT redirect users.
-  // The website homepage should always be accessible as a marketing/landing page.
-  // Users can click "Get Started" or "Sign In" to proceed to auth.
-  // This prevents issues with stale AsyncStorage state causing unwanted redirects.
-
   return (
     <WebNavigation>
       <ScrollView className="flex-1 bg-[#FDF8F5]" showsVerticalScrollIndicator={false}>
@@ -441,7 +436,3 @@ function TestimonialCard({ testimonial, index }: { testimonial: typeof TESTIMONI
             {testimonial.detail}
           </Text>
         </View>
-      </View>
-    </Animated.View>
-  );
-}
